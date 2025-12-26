@@ -1,8 +1,8 @@
 **This project has been created as part of the 42 curriculum by hlachhab**
 
 
-### Description
-	Inception is a good introduction to docker and containerization, its a good way to learn how u can setup docker images from scratch depending on each service, these services include a database (mariadb) to save data, wordpress for managing dynamic content and compiling php files and lastely nginx a web server that let u connect to the browser. Each of these services are running on a different isolated container so the goal is to understand how to manage and connect these services together with docker so u can simulate a real world production enviroment for a web server.
+# Description
+	Inception is a good introduction to docker and containerization, its a good way to learn how you can setup docker images from scratch depending on each service, these services include a database (mariadb) to save data, wordpress for managing dynamic content and compiling php files and lastely nginx a web server that let you host your website and can serve static files. Each of these services are running on a different isolated container so the goal is to understand how to manage and connect these services together with docker so u can simulate a real world production enviroment for a web server.
 
 
 	How u can make this work ?
@@ -12,7 +12,7 @@
 	Think of containers like virtual machines but instead of simulating the hardware and the OS for each container, containers use the actual hardware for the host machine so it simulates only the software this save us some space and time when launching and using the container.
 
 ## Docker File:
-	Docker file is used to create a docker image, basically you run bunch of instrunctions related to what service you want to install and configure on that container like what base system u wanna build ur software on and what kind of tools u wanna install and the entrypoint to your system (first thing that runs after installation faze).
+	Docker file is used to create a docker image, basically you run bunch of instrunctions that considered layers of commands related to what service you want to install and configure on that container thats gonna be used by docker engine to automatically build a docker image, like what base system you wanna build ur software on and what kind of tools u wanna install and the entrypoint to your system (first thing that runs after installation faze).
 
 ## Docker image
 	A docker image is an instance or blueprint for a container, it includes all the dependencies and requirement for ur container to run, once you have a built up image you just need to run it and the container will be running based on that image.
@@ -38,14 +38,14 @@
 
 <!-- ## Resources -->
 
-### Some Usefull References
+## Some Usefull References
 	- Docker documentation https://docs.docker.com/get-started/docker-overview/
 	- Docker Compose documentation https://www.geeksforgeeks.org/devops/docker-compose/
 	- Nginx official documentation https://nginx.org/
 	- Mariadb Docs https://mariadb.com/docs
 	- Wordpress https://wordpress.org/documentation/article/get-started-with-wordpress/
 
-### AI Usage
+## AI Usage
 	AI was used to:
 		- Clarify how docker manages containers and how does it work
 		- Validate configuration and services logic
@@ -55,7 +55,7 @@
 <!-- ## Technical Choices -->
 
 ### Virtual Machines vs Docker
-	Virtual machines emulate an entire operating system, making them heavier and slower.
+	Virtual machines emulate the hardware and the OS, making them heavier and slower.
 	Docker containers share the host kernel and emulate only the OS, making them lighter and faster to start.
 
 ### Secrets vs Environment Variables

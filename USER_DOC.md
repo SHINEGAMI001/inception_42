@@ -38,8 +38,10 @@
 
 5. Locating credentials:
 	- All the sensitive credentials are stored as enviroment variables in .env
-__example enviroment file__
+* example enviroment `.env` file:
+```bash
 ADMIN_USER=superuser
 ADMIN_PWD=password
 ADMIN_EMAIL=email@email.email
+```
 
