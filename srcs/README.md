@@ -27,7 +27,7 @@
 
 	Docker compose is a tool used to run multiple containers at the same time using commands that can build, run, stop, remove, restart all containers at the same time.
 
-# Usage	
+## Usage	
 	+ Docker network that make a virtual local network allowing the possiblity for containers to find with each other just by service names without exposing port to the host machine.
 
 	+ Docker volumes that let u save data on ur host machine while containers can access it instead of losing data because containers data gets deleted every time it stops (docker compose down) so the volumes option make data persist.

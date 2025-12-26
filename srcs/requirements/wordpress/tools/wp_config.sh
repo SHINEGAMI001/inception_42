@@ -27,8 +27,6 @@ if ! wp user list --path=/var/www/html --allow-root | grep -q "${WORDPRESS_USER}
 		--path=/var/www/html --role=subscriber --allow-root
 fi
 
-# chown -R www-data:www-data /var/www/html
-# chmod -R 755 /var/www/html
 
 
 if [ ! -d /run/php ]; then

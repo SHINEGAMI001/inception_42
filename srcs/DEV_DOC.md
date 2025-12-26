@@ -1,6 +1,6 @@
 **This is a devolover documantation for setuping enviroment file and managing the project**
 
-## Setup enviroment file
+# Setup enviroment file
 	- To add an enviroment file u need to make a .env file and store all required configuration values needed as enviroment variables and add it to the docker compose to make it work.
 	- This file illustrates the environment variables required for the application to run.
 	**Do not** commit your actual `.env` file to version control.

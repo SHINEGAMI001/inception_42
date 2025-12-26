@@ -1,16 +1,16 @@
 up:
-	docker compose down
-	docker compose up -d
+	docker compose -f srcs/docker-compose.yaml down
+	docker compose -f srcs/docker-compose.yaml up -d
 
 down:
-	docker compose down
+	docker compose -f srcs/docker-compose.yaml down
 
 restart:
-	docker compose restart
+	docker compose -f srcs/docker-compose.yaml restart
 
 re:
-	docker compose down
-	docker compose up --build -d
+	docker compose -f srcs/docker-compose.yaml down
+	docker compose -f srcs/docker-compose.yaml up --build -d
 
 fclean:
 	docker system prune -a --volumes

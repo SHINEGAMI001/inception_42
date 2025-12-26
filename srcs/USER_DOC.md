@@ -23,11 +23,11 @@
 
 3. Check all services:
 	- u can check all the running services by typing this command
-		~/inception$ docker ps
+		~/inception/srcs$ docker ps
 	- check built up images
-		~/inception$ docker images
+		~/inception/srcs$ docker images
 	- for logs checking
-		~/inception$ docker logs <service_name>
+		~/inception/srcs$ docker logs <service_name>
 	- check binded volumes
 		~/inception$ docker volume ls
 
