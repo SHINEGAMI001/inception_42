@@ -66,8 +66,7 @@
 	Docker networks provide container isolation and internal DNS resolution.
 	Host networking removes isolation and is not recommended for production.
 
-__check DEV_DOC.md and USER_DOC.md form more information about building the project
-
 ### Docker Volumes vs Bind Mounts
 	Volumes are created and managed by Docker and are portable.
 	Bind mounts depend on host paths and are harder to manage across systems.
+__check DEV_DOC.md and USER_DOC.md form more information about building the project
